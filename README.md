@@ -1,4 +1,4 @@
-# node js upload file API
+# Node js upload file API
 
 ### 1. Initialize
 
@@ -23,7 +23,7 @@ http://localhost:3000/api/upload
 ```
 
 + Perform a POST request with body->form-data->
-+ Set key as "uploadFile" and browse a file.
++ Set key as **"uploadFile"** and browse a file.
 
 JSON response
 

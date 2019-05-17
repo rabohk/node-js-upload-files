@@ -1,4 +1,4 @@
-// Name of the input file should be "uploadVideo" in the HTML form
+// Name of the input file should be "uploadFile" in the HTML form
 const express = require('express');
 const multer = require('multer');
 const path = require('path');
