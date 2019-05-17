@@ -10,7 +10,7 @@ const port = 3000;
 const storage = multer.diskStorage({
     destination:'./uploads',
     filename: function(req,file,callback){
-        // uploadView-timestamp.ext
+        // uploadFile-timestamp.ext
         callback(null,file.fieldname + "-" + Date.now() + path.extname(file.originalname))
     }
 });
@@ -18,7 +18,7 @@ const storage = multer.diskStorage({
 // init upload
 const upload = multer({
     storage: storage
-}).single('uploadVideo');
+}).single('uploadFile');
 
 app.post('/api/upload', (req,res)=>{
     upload(req,res,(err)=>{
